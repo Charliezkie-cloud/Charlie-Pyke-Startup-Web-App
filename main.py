@@ -17,7 +17,7 @@ with st.sidebar:
             'check-circle-fill',
             'google-play',
             "robot"
-        ], menu_icon="list", default_index=2
+        ], menu_icon="list", default_index=0
     )
 
 if selected == "Rules":
