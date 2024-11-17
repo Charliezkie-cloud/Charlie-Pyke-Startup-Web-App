@@ -21,6 +21,8 @@ with st.sidebar:
     )
 
 if selected == "Rules":
+    rulesEnglish()
+    st.markdown("---")
     rulesBisaya()
 elif selected == "Tools":
     tools()

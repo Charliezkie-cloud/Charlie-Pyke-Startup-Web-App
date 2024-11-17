@@ -1,7 +1,8 @@
 import streamlit as st
 
+
 def rulesBisaya():
-    st.title("Pahibalo!")
+    st.title("Pahibalo! (Bisaya)")
     st.write("Tungod sa nahitabo nga insidente sa miaging higayon, kami nagdesisyon nga magbutang ug tracker sa matag computer unit. Ang tanan ninyong lihok sa pag-abli ug mga aplikasyon ug pag-browse sa internet amo nang ma-monitor. Kung adunay mosulay nga mopasubra sa among mga balaod, ipatuman ang pag-ban gikan sa paggamit sa computer café.")
 
     st.header("Mga balaod sa Computer Café:")
@@ -41,9 +42,17 @@ def rulesBisaya():
         - Ayaw pagbutang ug bisan unsang basura sa sulod sa computer café.
         - Palihug ayuha ug taronga ang bangko human maggamit sa computer.
     """)
+    
+    col9, col10 = st.columns(2)
+    col10.image("./img/no-porn.jpg")
+    col9.write("""
+    5. Walay Explicit nga Sulod:
+        - Ang pornograpikong materyal, explicit nga imahe, o adult nga sulod kay striktong ginadili. Ang bisan kinsa nga mosulay og bisita sa usa ka explicit nga site kay awtomatikong ma-block.
+    """)
+
 
 def rulesEnglish():
-    st.title("Announcement!")
+    st.title("Announcement! (English)")
     st.write("Due to the incident that occurred previously, we have decided to install a tracker on each computer unit. All your activities, including opening applications and browsing the internet, will now be monitored. If anyone attempts to violate our rules, a ban from using the computer café will be enforced.")
 
     st.header("Computer Café Rules:")
@@ -81,4 +90,11 @@ def rulesEnglish():
     4. Cleanliness and order:
         - Do not leave any trash inside the computer café.
         - Please arrange the chair properly after using the computer.
+    """)
+    
+    col9, col10 = st.columns(2)
+    col10.image("./img/no-porn.jpg")
+    col9.write("""
+    5. No Explicit Content:
+        - Pornographic material, explicit imagery, or adult content is strictly prohibited. Anyone who attempts to visit an explicit site will automatically be blocked.
     """)
